@@ -69,6 +69,11 @@
                                     </form>
                                 </div>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link" href="/#/donations" role="button">
+                                    Donations
+                                </a>
+                            </li>
                         @endguest
                     </ul>
                 </div>

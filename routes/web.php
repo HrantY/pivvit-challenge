@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,6 +20,6 @@ Auth::routes();
 
 Route::middleware('auth')->group(function () {
     Route::get('/', function () {
-        return view('home');
+        return view('home', ['access_token' => auth()->user()->createToken('auth')->plainTextToken]);
     });
 });

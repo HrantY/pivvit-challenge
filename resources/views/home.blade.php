@@ -5,3 +5,6 @@
     <App></App>
 </div>
 @endsection
+<script>
+    window.accessToken = "{{ $access_token }}"
+</script>
